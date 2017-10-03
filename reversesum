@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int n,m,rev,dig,sum;
+    printf("Enter an integer\n");
+    scanf("%d",&n);
+    m=n;
+    rev=sum=0;
+    do
+    {
+        dig=m%10;
+        rev=rev*10+dig;
+        sum=sum+dig;
+        m=m/10;
+    }
+    while(m!=0);
+    printf("Reverse of the number is %d\n",rev);
+    printf("Sum of digits is %d\n",sum);
+    return 0;
+}
